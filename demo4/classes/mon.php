@@ -1,7 +1,7 @@
 <?php
-
-require_once'../lib/database.php';
-require_once'../helpers/format.php';
+$filepath= realpath(dirname(__FILE__));
+include_once ($filepath.'/../lib/database.php');
+include_once ($filepath.'/../helpers/format.php');
 
 ?>
 <?php
@@ -63,6 +63,14 @@ class mon {
         return $result;
 
     }
+    public function show_monid($id){
+        $query = " SELECT monan.* ,loai_mon.name_loai 
+        From monan INNER JOIN loai_mon ON monan.id_loai = loai_mon.id_loai order by monan.id_mon desc where id ";
+        // $query = "SELECT * FROM monan order by id_mon desc" ;
+        $result = $this->db->select($query);
+        return $result;
+
+    }
     public function update_mon($data,$files,$id){
        
         
@@ -97,8 +105,6 @@ class mon {
                      return $alert;
                  }
                  $query ="  UPDATE monan SET 
-                --  name_mon='$name_mon',
-                --  id_loai = '$loaimon',
                  gia_mon= '$gia',
                  ghichu_mon='$ghichu',
                  images ='$unique_image'
@@ -107,8 +113,6 @@ class mon {
              }else{
                  //nếu người dùng không chọn ảnh
                 $query ="  UPDATE monan SET 
-                -- name_mon='$name_mon',
-                -- id_loai = '$loaimon',
                 gia_mon= '$gia',
                 ghichu_mon='$ghichu'
                 tinhtrang='$tinhtrang'
@@ -144,6 +148,18 @@ class mon {
         $result = $this->db->select($query);
         return $result;
     }
+    public function getmonbyloai($id){
+        $query = "SELECT * FROM monan where id_loai='$id' And tinhtrang=1" ;
+        $result = $this->db->select($query);
+        return $result;
+    }
+    public function getmonkey($key){
+        $k= "'%".$key."%'";
+        $query = "SELECT * FROM monan where name_mon like  $k And tinhtrang=1" ;
+        $result = $this->db->select($query);
+        return $result;
+    }
+    
 }
 
 ?>

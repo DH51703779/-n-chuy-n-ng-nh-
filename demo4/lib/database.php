@@ -1,10 +1,7 @@
 <?php
-include'../config/config.php';
-$o = new PDO("mysql:host=localhost; dbname=bookstore_vn", 'root' ,'' );
-$o->query('set names utf8');
-$sql ="select * from nhaxb";
-$stm = $o->query($sql);//tra ve 1 doi tuong PDO Statement
-$data = $stm->fetchAll();
+$filepath = realpath(dirname(__FILE__));
+include_once ($filepath.'/../config/config.php');
+
 ?>
 
 
@@ -16,12 +13,12 @@ Class Database{
    public $pass   = DB_PASS;
    public $dbname = DB_NAME;
  
- 
    public $link;
    public $error;
  
  public function __construct(){
   $this->connectDB();
+  
  }
  
 private function connectDB(){

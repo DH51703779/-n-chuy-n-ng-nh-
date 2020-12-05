@@ -31,7 +31,22 @@ label {
 .bgtd{
     background-color: none !important;
 }
- 
+table{ 
+    border:2px solid saddlebrown;
+    background-color: white;
+}
+th{
+    border:2px solid saddlebrown;
+    color: darkgray;
+    background-color: #000;
+    font-size: 15px;
+    
+}
+td{
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    font-size: 20px;
+}
 
 </style>
 

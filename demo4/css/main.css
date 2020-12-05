@@ -8,6 +8,10 @@ html,body{
     color: black;
 }
 /*menu*/
+.sizebaby li a {
+    font-size: 12px !important;
+    color: antiquewhite !important;
+}
 .navbar{
     background-color: saddlebrown !important ;
 }
@@ -87,22 +91,7 @@ footer {
     background-color: saddlebrown;
 	color:white;
 }
-table{ 
-    border:2px solid saddlebrown;
-    background-color: white;
-}
-th{
-    border:2px solid saddlebrown;
-    color: darkgray;
-    background-color: #000;
-    font-size: 15px;
-    
-}
-td{
-    border-top:1px solid #ccc;
-    border-bottom:1px solid #ccc;
-    font-size: 20px;
-}
+
 
 /*Media Query*/
 @media (max-width: 992px){

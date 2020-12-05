@@ -1,0 +1,27 @@
+@import url("//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css");
+
+/* .banner-sec{background:url()  no-repeat left bottom; background-size:cover; min-height:500px; border-radius: 0 10px 10px 0; padding:0;} */
+
+
+.login-sec{
+    background: #d7d2c1;
+    border: 2px !important;
+    
+
+}
+
+
+
+.btn-login{background: #DE6262; color:#fff; font-weight:600;}
+    
+
+table{
+    border:5px solid #000000 !important;
+
+}
+span{
+    color:red;
+}
+.succsess{
+    color: green;
+}

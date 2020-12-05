@@ -1,7 +1,7 @@
 <?php
-
-include'../lib/database.php';
-include'../helpers/format.php';
+$filepath= realpath(dirname(__FILE__));
+include_once ($filepath.'/../lib/database.php');
+include_once ($filepath.'/../helpers/format.php');
 ?>
 <?php
 
@@ -42,6 +42,13 @@ class loaimon {
     public function show_loai(){
         
         $query = "SELECT * FROM loai_mon order by id_loai desc" ;
+        $result = $this->db->select($query);
+        return $result;
+
+    }
+    public function show_loaimenu(){
+        
+        $query = "SELECT * FROM loai_mon " ;
         $result = $this->db->select($query);
         return $result;
 

@@ -11,21 +11,21 @@ include'inc\menu.php';
         <div class="carousel-inner" >
             
             <div class="carousel-item active">
-                <img src="images/canh/restaurant-691397.jpg">
+                <img src="images/New folder/restaurant-691397.jpg">
                 <div class="carousel-caption">
                     <h1 class="display-2">GS restaurant</h1>
                    
                 </div>
             </div>
             <div class="carousel-item ">
-                <img src="images/canh/restaurant-449952.jpg">
+                <img src="images/New folder/restaurant-449952.jpg">
                 <div class="carousel-caption">
                     <h1 class="display-2">GS restaurant</h1>
                    
                 </div>
             </div>
             <div class="carousel-item ">
-                <img src="images/canh/kitchen-731351_1920.jpg">
+                <img src="images/New folder/kitchen-731351_1920.jpg">
                 <div class="carousel-caption">
                     <h1 class="display-2">GS restaurant</h1>
                    
@@ -53,7 +53,7 @@ include'inc\menu.php';
 	<div class="row padding">
 		<div class="col-md-4">
 			<div class="card">
-				<img class="card-img-top" src="./images/food/suonheo.jpg">
+				<img class="card-img-top" src="images/New folder/platter-2009590.jpg">
                 <div class="carousel-caption">
                     <h6 class="display-2"></h6>
                     <button type="button" class="btn btn-outline-light btn-lg">
@@ -64,7 +64,7 @@ include'inc\menu.php';
 		</div>
 		<div class="col-md-4">
 			<div class="card">
-				<img class="card-img-top" src="images/canh/table-791167_1920.jpg">
+				<img class="card-img-top" src="images/New folder/table-791167_1920.jpg">
                 <div class="carousel-caption">
                     <h6 class="display-2"></h6>
                     <button type="button" class="btn btn-outline-light btn-lg">
@@ -75,7 +75,7 @@ include'inc\menu.php';
 		</div>
 		<div class="col-md-4">
 			<div class="card">
-				<img class="card-img-top" src="images/coffee-2425294_1920.jpg">
+				<img class="card-img-top" src="images/New folder/coffee-2425294_1920.jpg">
                 <div class="carousel-caption">
                     <h6 class="display-2"></h6>
                     <button type="button" class="btn btn-outline-light btn-lg">
@@ -110,13 +110,13 @@ include'inc\menu.php';
       <div class="hi-next "></div>
       <ul>
           <li class="classa" > 
-          <img src="images/food/bonuongnguqua.jpg" alt="Img 1" /></li>
-          <li class="classa"><img  src="./images/food/boxaodau.jpg" alt="Img 2" /></li>
-          <li class="classa"><img  src="./images/food/bonuongy.jpg" alt="Img 3" /></li>
-          <li class="classa"><img  src="./images/food/chinese-3855829_1920.jpg" alt="Img 4" /></li>
-          <li class="classa"><img  src="./images/food/suonheo.jpg" alt="Img 5" /></li>
-          <li class="classa"><img src="images/food/food-2720418_1920.jpg" alt="Img 6" /></li>
-          <li class="classa" ><img src="images/food/bonuongnguqua.jpg" alt="Img 1" /></li>
+          <img src="images/New folder/chicken-1559579_1920.jpg" alt="Img 1" /></li>
+          <li class="classa"><img  src="images/New folder/goulash-2872112_1920.jpg" alt="Img 2" /></li>
+          <li class="classa"><img  src="images/New folder/ham-2063533_1920.jpg" alt="Img 3" /></li>
+          <li class="classa"><img  src="images/New folder/kitchen-731351_1920.jpg" alt="Img 4" /></li>
+          <li class="classa"><img  src="images/New folder/sushi-928894_1920.jpg" alt="Img 5" /></li>
+          <li class="classa"><img src="images/New folder/food-2720418_1920.jpg" alt="Img 6" /></li>
+          <li class="classa" ><img src="images/New folder/food-1836230_1920.jpg" alt="Img 1" /></li>
           
       </ul>
   </div>

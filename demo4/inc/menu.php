@@ -1,3 +1,30 @@
+<?php
+    require_once 'session.php';
+    session::init();
+?>
+<?php
+include './lib/database.php';
+include './helpers/format.php';
+
+spl_autoload_register(function($class){
+    include_once "classes/".$class.".php";});
+
+
+        $db= new Database();
+        $fm= new Format();
+        $ct= new cart();
+        $us = new user();
+        $loaimon = new loaimon();
+        $mon = new mon(); 
+
+?>
+<?php
+  header("Cache-Control: no-cache, must-revalidate");
+  header("Pragma: no-cache"); 
+  header("Expires: Sat, 26 Jul 1997 05:00:00 GMT"); 
+  header("Cache-Control: max-age=2592000");
+?>
+
 <!-- -->
 <!DOCTYPE html>
 <html lang="en">
@@ -42,12 +69,24 @@
                 <li class="nav-item">
                     <a class="nav-link " href="dattiec.php">Đặt bàn</a>
                 </li>
+                <?php
+                                if(isset($_GET['action'])&& $_GET['action']=='logout'){
+                                    Session::destroy();
+                                }
+                            ?>
               
-                <li class="nav-item">
-                    <a href="#"><img height=50 width= 50 src="images/cart.png" ></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link " href="http://localhost:70/demo4/admin/login.php" ><img height=35 width= 35 src="images/login.png" ></a>
+                <li class=" sizebaby">
+                <?php if(!empty(session::get('name'))){ ?>
+                                <a ><?php echo session::get('name') ?></a>
+                                <a href="?action=logout"> <img height=35 width= 35 src="images/logout.png" ></a>
+							<?php }else 
+							
+							{?>
+							<a href="login.php"><img height=35 width= 35 src="images/login.png" ></a>
+							 	
+
+							<?php }?>
+                    <!-- <a class="nav-link " href="login.php" ><img height=35 width= 35 src="images/login.png" ></a> -->
                 </li>
                
             </ul>

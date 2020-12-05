@@ -6,41 +6,27 @@
 
         <ul class="list-unstyled components">
             <p>
-                Thực đơn
+            <form action=thucdon.php method=post>
+                <input name=key type="search" placeholder="Search">
+                <button type="submit" >tìm</button>
+            </form>
             </p>
+            <?php
+            $show_loai = $loaimon->show_loaimenu();
+            if($show_loai){
+
+                while($result = $show_loai->fetch_assoc()){
+                    	
+            ?>
             <li class="active">
-                <a href="#">Tráng miệng </a>
+                <a href="?id_loai=<?php echo $result['id_loai']?>"><?php echo $result['name_loai']?> </a>
             </li>
-            <li >
-                <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Món Chính</a>
-                <ul class="collapse list-unstyled" id="homeSubmenu">
-                    <li>
-                        <a href="#">Heo</a>
-                    </li>
-                    <li>
-                        <a href="#">Bò</a>
-                    </li>
-                    <li>
-                        <a href="#">Gà</a>
-                    </li>
-                    <li>
-                        <a href="#">Cá</a>
-                    </li>
-                    <li>
-                        <a href="#">Cơm/Mì/bún</a>
-                    </li>
-                    <li>
-                        <a href="#">Rau</a>
-                    </li>
-                </ul>
-            </li>
-         
-            <li>
-                <a href="#">Lẩu</a>
-            </li>
-            <li>
-                <a href="#">Tráng miệng</a>
-            </li>
+
+            <?php
+                }
+            } 
+                ?>
+           
          
         </ul>
     </nav>
